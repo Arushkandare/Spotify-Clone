@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="img/titleLogo.svg" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey rounded p-1">
+                <div class="logo">
+                    <img class="invert" src="img/logo.svg" alt="Logo">
+                </div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="Search">Search</li>
+                </ul>
+                <img class="invert cross" src="img/cross.svg" alt="">
+            </div>
+            <div class="library bg-grey rounded p-1">
+                <div class="heading flex">
+                    <img class="library-logo invert" src="img/library-logo.svg" alt="library-logo">
+                    <div>Your library</div>
+                </div>
+                <div class="song-list">
+                    <ul></ul>
+                </div>
+                <div class="footer">
+                    <div class="div">Legal</div>
+                    <div class="div">Privacy Center</div>
+                    <div class="div">Privacy Policy</div>
+                    <div class="div">Cookies</div>
+                    <div class="div">About Ads</div>
+                    <div class="div">Accessibility</div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded p-1">
+            <div class="header">
+                <div class="nav">
+                    <img class="invert hamburger" src="img/hamburger.svg" alt="">
+                    <div class="arrow-buttons">
+                        <svg viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signup">Sign up</button>
+                    <button class="login">Log in</button>
+                </div>
+            </div>
+            <div class="spotify-playlists">
+                <h1>Spotify Playlists</h1>
+                <div class="card-container">
+
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="above-bar">
+                    <div class="song-info"></div>
+                    <div class="playbuttons">
+                        <img class = "invert" id = "previous" src="img/previous.svg" alt="">
+                        <img class = "invert" id = "play" src="img/play.svg" alt="">
+                        <img class = "invert" id = "next" src="img/next.svg" alt="">
+                    </div>
+                    <div class="song-time-and-volume">
+                        <div class="song-time"></div>
+                        <div class="volume">
+                            <img class="volume-button invert" src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input class="volume-input" type="range" name="volume" value="100" id="volume-slider">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
